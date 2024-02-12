@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<!-- C. Una página de contacto.
+Debe pedir los datos de contacto del cliente y dejar un área para la consulta. Mínimo 6
+campos de datos (inputs). Que al menos uno de ellos sea obligatorio. Diseño libre.
+Los datos deben enviarse mediante la URL del navegador, a la página recibido.html, que
+mostrará un mensaje del tipo “formulario enviado correctamente”. -->
+
+<body>
+    <header>
+
+        <nav>
+            <div class="cont-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li id="about-style"><a href="about.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+        <div>
+            <h1>Formulario de contacto</h1>
+        </div>
+
+    <section>
+
+        <div>
+        <form action="recibido.html" method="get">
+
+            <!-- FIELDSET 1 -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Datos personales</legend>
+
+                <div class="cont-info-personal">
+
+                    <label for="sexo">Género:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="hombre">Masculino</option>
+                        <option value="mujer">Femenino</option>
+                    </select><br>
+
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" placeholder="John" id="nombre" name="nombre" required><br>
+
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" placeholder="Connor" id="apellido" name="apellido" required><br>
+
+                    <label for="telefono">Teléfono: </label>
+                    <input type="tel" pattern="+34 [0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+34 123 456 789" id="telefono" name="telefono" required><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="skynet@myrobot.com" id="email" name="email" required>
+
+                </div>
+
+            </fieldset>
+
+            <!-- FIELDSET 2 -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Escoja un producto del que quiera información</legend>
+
+                <input type="checkbox" id="robot1" name="robot1" value="pr01">
+                <label for="robot1"> PR01</label><br>
+                <input type="checkbox" id="robot2" name="robot2" value="buddy">
+                <label for="robot2"> BUDDY</label><br>
+                <input type="checkbox" id="robot3" name="robot3" value="sda-10f">
+                <label for="robot3"> SDA-10F</label>
+                <input type="checkbox" id="otros" name="otros" value="Otros">
+                <label for="otros"> Otros</label>
+
+
+            </fieldset>
+
+            <!-- FIELDSET 3: COMPLETAR FORM -->
+
+            <fieldset class="cont-fieldset">
+            <legend>Completar formulario</legend>
+
+                <div class="div-fieldset-3">
+                    <label for="completar"></label><br>
+                    <input type="submit" name="completar" id="completar" value="Enviar propuesta"><br>
+                </div>
+
+            </fieldset>
+
+        </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+      <div id="cont-div-footer">
+        <div class="div-footer"><h5>(c) 2024 Hunabkuh Design</h5></div>
+        <div class="div-footer"><h5>Términos/Condiciones de uso web</h5></div>
+        <div class="div-footer"><h5>Política de privacidad</h5></div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
